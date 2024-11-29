@@ -27,9 +27,9 @@ async function getDataByLetter(letter) {
 function displayDataByLetter(data) {
         for (let i = 0; i < data.meals.length; i++) {
             box += `
-            <div class="col-md-3">
+            <div class="col-md-3 resize">
                 <div class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
-                    <img class="w-100" src="${data.meals[i].strMealThumb}" alt="meal">
+                    <img class="w-100 rounded-2" src="${data.meals[i].strMealThumb}" alt="meal">
                     <div class="meal-layer position-absolute d-flex align-items-center text-black p-2">
                         <h3>${data.meals[i].strMeal}</h3>
                     </div>
@@ -115,9 +115,9 @@ function displayDataByName(data) {
     let zer=``
     for (let i = 0; i < data.meals.length; i++) {
         zer += `
-        <div class="col-md-3">
+        <div class="col-md-3 resize">
             <div class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
-                <img class="w-100" src="${data.meals[i].strMealThumb}" alt="meal">
+                <img class="w-100 rounded-2" src="${data.meals[i].strMealThumb}" alt="meal">
                 <div class="meal-layer position-absolute d-flex align-items-center text-black p-2">
                     <h3>${data.meals[i].strMeal}</h3>
                 </div>

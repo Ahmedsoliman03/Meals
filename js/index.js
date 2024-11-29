@@ -22,9 +22,9 @@ function dispalayRandom(data) {
    let content = ``;
    for (let i = 0; i < data.meals.length; i++) {
        content += `
-<div class="col-md-3">
+<div class="col-md-3 resize">
            <div class="meal position-relative overflow-hidden rounded-2">
-               <img src=${data.meals[i].strMealThumb} class="w-100" alt="meal" />
+               <img src=${data.meals[i].strMealThumb} class="w-100 rounded-2" alt="meal" />
                <div class="meal-layer position-absolute text-black d-flex align-items-center p-2">
                    <h3>${data.meals[i].strMeal}</h3>
                </div>
@@ -66,7 +66,7 @@ function showDetails(data) {
             <img src="${meal.strMealThumb}" class="w-100" alt="details-meal" />
             <h3 class="text-white mt-2">${meal.strMeal}</h3>
         </div>
-        <div class="col-md-8 text-white details-content">
+        <div class="col-md-8 text-white details-content resize">
             <h3>Instructions</h3>
             <p>${meal.strInstructions}</p>
             <h2>Area: ${meal.strArea}</h2>

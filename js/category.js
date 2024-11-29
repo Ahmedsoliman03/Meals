@@ -28,7 +28,7 @@ function displayCategory(data){
    
     for(let i = 0 ;i< data.categories.length ; i++){
         cartona+=`
-         <div class="col-md-3">
+         <div class="col-md-3 resize">
             <div class="meal position-relative overflow-hidden rounded-2">
                 <img src=${data.categories[i].strCategoryThumb} class="w-100" alt="meal"/>
                 <div class="meal-layer position-absolute text-black text-center p-2">

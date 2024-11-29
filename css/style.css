@@ -69,3 +69,26 @@ top: 0;
 ::placeholder{
   color: #9b9c9e !important;
 }
+
+@media screen and (max-width:768px) {
+
+  .ByName , .Byletter{
+    width: 85%;
+  }
+  
+  .resize{
+    width: 80%;
+    margin-left: 54px;
+  }
+  .resize p {
+    margin-left: 10px;
+  }
+  .resize img{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width:450px) {
+
+  
+ 
+}

@@ -23,8 +23,8 @@ function displayIngredients(data) {
 let cartona = ``
     for (let i = 0; i < data.length; i++) {
         cartona += `
-          <div class="col-md-3 text-white mouse">
-                <div class="rounded-2 text-center cursor-pointer">
+          <div class="col-md-3 text-white mouse ">
+                <div class="rounded-2 text-center cursor-pointer resize d-flex flex-column align-items-center justify-content-center">
                         <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                         <h3>${data[i].strIngredient}</h3>
                         <p>${data[i].strDescription.split(" ").slice(0, 20).join(" ")}</p>
